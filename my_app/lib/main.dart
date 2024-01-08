@@ -527,7 +527,10 @@ class MyHomePageState extends State<MyHomePage> {
                   builder: (context) => const SecondScreen(),
                 ));
           },
-          child: const Text('Next screen')),
+          child: const Text(
+            'Next screen',
+            style: TextStyle(fontSize: 30.0),
+          )),
     );
   }
 }
@@ -552,7 +555,8 @@ class SecondScreen extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          child: const Text('Previous screen')),
+          child:
+              const Text('Previous screen', style: TextStyle(fontSize: 30.0))),
     );
   }
 }
